@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://5vwce4.csb.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script crossorigin="" type="text/javascript" src="./vendors_app_embed_sandbox_sandbox-startup.036d91db5.chunk.js.download"></script>
+    <script crossorigin="" type="text/javascript" src="./vendors_app_embed_sandbox-startup.6e3433fd3.chunk.js.download"></script>
+    <script crossorigin="" type="text/javascript" src="./default_app_embed_sandbox_sandbox-startup.8cee8ce41.chunk.js.download"></script>
+    <script crossorigin="" type="text/javascript" src="./sandbox-startup.0567399cc.js.download"></script><link href="https://codesandbox.io/static/js/babel.7.12.12.min.js" rel="prefetch" as="script">
+
+<script src="./browserfs.min.js.download" type="text/javascript"></script>
+
+<script>
+  window.process = BrowserFS.BFSRequire('process');
+  window.Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+</script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link href="./bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="manifest" href="https://5vwce4.csb.app/manifest.json">
+    <link rel="shortcut icon" href="https://5vwce4.csb.app/favicon.ico">
+
+    <link rel="stylesheet" href="./w3.css">
+
+    <title>React App</title>
+    <link rel="manifest" href="https://5vwce4.csb.app/manifest.json">
+  <script charset="utf-8" src="./vendors_react-devtools-backend.759c29504.chunk.js.download"></script><style id="/src/styles.css:-css" type="text/css">.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.customCSS {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.body {
+  background: #f5f5f5;
+  color: #111;
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  flex: 0 0 calc(33.33 - 20px);
+  max-width: 0 0 calc(33.33 - 20px);
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.item-absolute {
+  width: 80%;
+  float: right;
+}
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.btn-toggle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, 0.85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+/* .sidebar-absolute {
+  position: absolute;
+} */
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.img-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.img-icon-profile {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonialDiv {
+  /* position: absolute; */
+  width: auto;
+  text-align: center;
+  background-color: pink;
+  height: 400px;
+  padding: 30px;
+}
+
+.testimonialMainDiv {
+  display: "flex";
+  justify-content: "center";
+}
+</style><script charset="utf-8" src="./0.84205e20b.chunk.js.download"></script><script charset="utf-8" src="./2.246c6c4fb.chunk.js.download"></script><script charset="utf-8" src="./6.2298658e4.chunk.js.download"></script></head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><main class="d-flex flex-nowrap sidebar-absolute"><div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;"><ul class="nav nav-pills nav-flush flex-column mb-auto text-center"><li class="nav-item"><a href="https://5vwce4.csb.app/#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right"><img src="./real-estate.png" alt="home" class="img-icon">HOME</a></li><li><a href="https://5vwce4.csb.app/#" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right"><img src="./drinking.png" alt="drink" class="img-icon">ABCD</a></li><li><a href="https://5vwce4.csb.app/#" class="nav-link py-3 border-bottom rounded-0" title="Products" data-bs-toggle="tooltip" data-bs-placement="right"><img src="./groceries.png" alt="groceries" class="img-icon">XYZy</a></li><li><a href="https://5vwce4.csb.app/#" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right"><img src="./maid.png" alt="home" class="img-icon">QWERTY</a></li></ul><div class="dropdown border-top"><a href="https://5vwce4.csb.app/#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">&nbsp; &nbsp; &nbsp;<img src="./mdo.png" alt="mdo" width="24" height="24" class="rounded-circle img-icon-profile"></a><ul class="dropdown-menu text-small shadow"><li><a class="dropdown-item" href="https://5vwce4.csb.app/#">New project...</a></li><li><a class="dropdown-item" href="https://5vwce4.csb.app/#">Settings</a></li><li><a class="dropdown-item" href="https://5vwce4.csb.app/#">Profile</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="https://5vwce4.csb.app/#">Sign out</a></li></ul></div></div></main></div>
+  </body></html>
